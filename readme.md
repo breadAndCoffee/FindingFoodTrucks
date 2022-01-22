@@ -34,10 +34,3 @@ python3 findFoodTrucks.py 37.7865580501799 -122.40103337534973
 ```
 
 Don't worry if you forget to add the two command line arguments, if you do we'll prompt you for that information.
-
-
-# Project Road Map
-
----
-1. Break latitude + longitude retrieval out into own method w/ tests + input validation (i.e. confirm the input is numeric).
-2. Implement latitude + longitude fuzzy search.
