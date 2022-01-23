@@ -35,10 +35,11 @@ def get_food_trucks_sorted_by_distance(searchingCoordinate, results):
     Iterates over the `results` data frame and finds the five closest food trucks in O(n log(n)) time.
     We craft a sorted tuple array (food_trucks_sorted_by_distance) which has a tuple of: <distance, [applicant, address]>
 
-    This function leverages the `bisect` libraries `insort_left` method. I'd considered creating a custom
-    data type for the food truck object and implementing a comparator method and then sorting an array of
-    those objects by distance, but decided that the extra space needed wasn't justified when I could just
-    achieve the same results during runtime using the aforementioned method / library.
+    This function leverages the `bisect` libraries `insort_left` method.
+
+    I'd considered creating a custom data type for the food truck object and implementing a comparator method and
+    then sorting an array of those objects by distance, but decided that the extra space needed wasn't justified
+    when I could achieve the same results during runtime using the aforementioned method / library.
 
     :param latitude: the latitude we want to search for food truck options at.
     :param longitude: the longitude we want to search for food truck options at.
